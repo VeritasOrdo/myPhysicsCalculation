@@ -9,6 +9,7 @@ class Spin {
         double spinY;
         double spinZ;
     public:
+        Spin();
         Spin(double spinValue);
         Spin(double spinValue,double spinX,double spinY,double spinZ);
         Spin(double spinValue,double azimuthalAngle,double polarAngle);

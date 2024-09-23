@@ -1,5 +1,12 @@
 #include "../../include/Spin/Spin.h"
 
+Spin::Spin() {
+    this->spinValue = 0.5;
+    this->spinX = 0;
+    this->spinY = 0;
+    this->spinZ = 1;
+}
+
 Spin::Spin(double spinValue) {
     this->spinValue = spinValue;
     this->spinX = 0;

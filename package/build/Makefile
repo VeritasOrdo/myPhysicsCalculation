@@ -169,6 +169,33 @@ src/Dimension3Vector/Dimension3Vector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/Dimension3Vector/Dimension3Vector.cpp.s
 .PHONY : src/Dimension3Vector/Dimension3Vector.cpp.s
 
+src/ElectronBase/ElectronBase.o: src/ElectronBase/ElectronBase.cpp.o
+.PHONY : src/ElectronBase/ElectronBase.o
+
+# target to build an object file
+src/ElectronBase/ElectronBase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryStatic.dir/build.make CMakeFiles/myPhysicsLibraryStatic.dir/src/ElectronBase/ElectronBase.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o
+.PHONY : src/ElectronBase/ElectronBase.cpp.o
+
+src/ElectronBase/ElectronBase.i: src/ElectronBase/ElectronBase.cpp.i
+.PHONY : src/ElectronBase/ElectronBase.i
+
+# target to preprocess a source file
+src/ElectronBase/ElectronBase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryStatic.dir/build.make CMakeFiles/myPhysicsLibraryStatic.dir/src/ElectronBase/ElectronBase.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.i
+.PHONY : src/ElectronBase/ElectronBase.cpp.i
+
+src/ElectronBase/ElectronBase.s: src/ElectronBase/ElectronBase.cpp.s
+.PHONY : src/ElectronBase/ElectronBase.s
+
+# target to generate assembly for a file
+src/ElectronBase/ElectronBase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryStatic.dir/build.make CMakeFiles/myPhysicsLibraryStatic.dir/src/ElectronBase/ElectronBase.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.s
+.PHONY : src/ElectronBase/ElectronBase.cpp.s
+
 src/LorentzVector/LorentzVector.o: src/LorentzVector/LorentzVector.cpp.o
 .PHONY : src/LorentzVector/LorentzVector.o
 
@@ -236,6 +263,9 @@ help:
 	@echo "... src/Dimension3Vector/Dimension3Vector.o"
 	@echo "... src/Dimension3Vector/Dimension3Vector.i"
 	@echo "... src/Dimension3Vector/Dimension3Vector.s"
+	@echo "... src/ElectronBase/ElectronBase.o"
+	@echo "... src/ElectronBase/ElectronBase.i"
+	@echo "... src/ElectronBase/ElectronBase.s"
 	@echo "... src/LorentzVector/LorentzVector.o"
 	@echo "... src/LorentzVector/LorentzVector.i"
 	@echo "... src/LorentzVector/LorentzVector.s"

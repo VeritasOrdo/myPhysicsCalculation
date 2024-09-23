@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../lib/libsomeBasicPackage.a CMakeFiles/myPhysicsLibraryStatic.dir/src/Dimension3Vector/Dimension3Vector.cpp.o CMakeFiles/myPhysicsLibraryStatic.dir/src/LorentzVector/LorentzVector.cpp.o CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o
+/usr/bin/ar qc ../lib/libsomeBasicPackage.a CMakeFiles/myPhysicsLibraryStatic.dir/src/Dimension3Vector/Dimension3Vector.cpp.o CMakeFiles/myPhysicsLibraryStatic.dir/src/ElectronBase/ElectronBase.cpp.o CMakeFiles/myPhysicsLibraryStatic.dir/src/LorentzVector/LorentzVector.cpp.o CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o
 /usr/bin/ranlib ../lib/libsomeBasicPackage.a

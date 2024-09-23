@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../lib/libsomeBasicPackage.so"
   "CMakeFiles/myPhysicsLibraryShared.dir/src/Dimension3Vector/Dimension3Vector.cpp.o"
   "CMakeFiles/myPhysicsLibraryShared.dir/src/Dimension3Vector/Dimension3Vector.cpp.o.d"
+  "CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o"
+  "CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o.d"
   "CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o"
   "CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o.d"
   "CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o"

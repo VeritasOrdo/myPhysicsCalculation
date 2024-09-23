@@ -83,10 +83,24 @@ CMakeFiles/myPhysicsLibraryShared.dir/src/Dimension3Vector/Dimension3Vector.cpp.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myPhysicsLibraryShared.dir/src/Dimension3Vector/Dimension3Vector.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Veritas_Ordo/myPhysicsCalculation/package/src/Dimension3Vector/Dimension3Vector.cpp -o CMakeFiles/myPhysicsLibraryShared.dir/src/Dimension3Vector/Dimension3Vector.cpp.s
 
+CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o: CMakeFiles/myPhysicsLibraryShared.dir/flags.make
+CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o: ../src/ElectronBase/ElectronBase.cpp
+CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o: CMakeFiles/myPhysicsLibraryShared.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Veritas_Ordo/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o -MF CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o.d -o CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o -c /home/Veritas_Ordo/myPhysicsCalculation/package/src/ElectronBase/ElectronBase.cpp
+
+CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Veritas_Ordo/myPhysicsCalculation/package/src/ElectronBase/ElectronBase.cpp > CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.i
+
+CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Veritas_Ordo/myPhysicsCalculation/package/src/ElectronBase/ElectronBase.cpp -o CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.s
+
 CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o: CMakeFiles/myPhysicsLibraryShared.dir/flags.make
 CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o: ../src/LorentzVector/LorentzVector.cpp
 CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o: CMakeFiles/myPhysicsLibraryShared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Veritas_Ordo/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Veritas_Ordo/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o -MF CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o.d -o CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o -c /home/Veritas_Ordo/myPhysicsCalculation/package/src/LorentzVector/LorentzVector.cpp
 
 CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.s: cma
 CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o: CMakeFiles/myPhysicsLibraryShared.dir/flags.make
 CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o: ../src/Spin/Spin.cpp
 CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o: CMakeFiles/myPhysicsLibraryShared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Veritas_Ordo/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Veritas_Ordo/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o -MF CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o.d -o CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o -c /home/Veritas_Ordo/myPhysicsCalculation/package/src/Spin/Spin.cpp
 
 CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.i: cmake_force
@@ -114,6 +128,7 @@ CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.s: cmake_force
 # Object files for target myPhysicsLibraryShared
 myPhysicsLibraryShared_OBJECTS = \
 "CMakeFiles/myPhysicsLibraryShared.dir/src/Dimension3Vector/Dimension3Vector.cpp.o" \
+"CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o" \
 "CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o" \
 "CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o"
 
@@ -121,11 +136,12 @@ myPhysicsLibraryShared_OBJECTS = \
 myPhysicsLibraryShared_EXTERNAL_OBJECTS =
 
 ../lib/libsomeBasicPackage.so: CMakeFiles/myPhysicsLibraryShared.dir/src/Dimension3Vector/Dimension3Vector.cpp.o
+../lib/libsomeBasicPackage.so: CMakeFiles/myPhysicsLibraryShared.dir/src/ElectronBase/ElectronBase.cpp.o
 ../lib/libsomeBasicPackage.so: CMakeFiles/myPhysicsLibraryShared.dir/src/LorentzVector/LorentzVector.cpp.o
 ../lib/libsomeBasicPackage.so: CMakeFiles/myPhysicsLibraryShared.dir/src/Spin/Spin.cpp.o
 ../lib/libsomeBasicPackage.so: CMakeFiles/myPhysicsLibraryShared.dir/build.make
 ../lib/libsomeBasicPackage.so: CMakeFiles/myPhysicsLibraryShared.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Veritas_Ordo/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../lib/libsomeBasicPackage.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Veritas_Ordo/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library ../lib/libsomeBasicPackage.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myPhysicsLibraryShared.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

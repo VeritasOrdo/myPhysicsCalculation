@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/Veritas_Ordo/myPhysicsCalculation/package/src/Dimension3Vector/Dimension3Vector.cpp" "CMakeFiles/myPhysicsLibraryStatic.dir/src/Dimension3Vector/Dimension3Vector.cpp.o" "gcc" "CMakeFiles/myPhysicsLibraryStatic.dir/src/Dimension3Vector/Dimension3Vector.cpp.o.d"
+  "/home/Veritas_Ordo/myPhysicsCalculation/package/src/ElectronBase/ElectronBase.cpp" "CMakeFiles/myPhysicsLibraryStatic.dir/src/ElectronBase/ElectronBase.cpp.o" "gcc" "CMakeFiles/myPhysicsLibraryStatic.dir/src/ElectronBase/ElectronBase.cpp.o.d"
   "/home/Veritas_Ordo/myPhysicsCalculation/package/src/LorentzVector/LorentzVector.cpp" "CMakeFiles/myPhysicsLibraryStatic.dir/src/LorentzVector/LorentzVector.cpp.o" "gcc" "CMakeFiles/myPhysicsLibraryStatic.dir/src/LorentzVector/LorentzVector.cpp.o.d"
   "/home/Veritas_Ordo/myPhysicsCalculation/package/src/Spin/Spin.cpp" "CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o" "gcc" "CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o.d"
   )
