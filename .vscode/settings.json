@@ -1,0 +1,7 @@
+{
+    "cmake.sourceDirectory": "/home/Veritas_Ordo/myPhysicsCalculation/package",
+    "files.associations": {
+        ".tcc": "cpp",
+        "iostream": "cpp"
+    }
+}
