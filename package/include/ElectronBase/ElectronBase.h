@@ -1,6 +1,8 @@
 #include "../Spin/Spin.h"
 #include "../Dimension3Vector/Dimension3Vector.h"
 
+#pragma once
+
 class ElectronBase
 {
     private:

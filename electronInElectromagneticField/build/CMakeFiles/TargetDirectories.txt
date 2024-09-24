@@ -1,0 +1,4 @@
+/home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir
+/home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles/electronInElectromagneticFieldLibraryShared.dir
+/home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles/edit_cache.dir
+/home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles/rebuild_cache.dir
