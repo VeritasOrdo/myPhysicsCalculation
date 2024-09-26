@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/include/../include/BasicMassageOfElectronInElectromagneticField
+CXX_INCLUDES = -I/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/../include/BasicMassageOfElectronInElectromagneticField -I/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/../include/ElectronTrajectoryByAnalysisInATimeSlice
 
 CXX_FLAGS = 
 

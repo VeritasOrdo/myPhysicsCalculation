@@ -1,4 +1,4 @@
-# Install script for directory: /home/Veritas_Ordo/myPhysicsCalculation/package
+# Install script for directory: /home/hjy_work/myPhysicsCalculation/package
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/Veritas_Ordo/myPhysicsCalculation/package/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hjy_work/myPhysicsCalculation/package/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

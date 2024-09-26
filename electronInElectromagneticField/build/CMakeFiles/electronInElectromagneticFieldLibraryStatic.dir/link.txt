@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../lib/libelectronInElectromagneticField.a CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o
+/usr/bin/ar qc ../lib/libelectronInElectromagneticField.a CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o
 /usr/bin/ranlib ../lib/libelectronInElectromagneticField.a

@@ -1,7 +1,7 @@
 CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o: \
- /home/Veritas_Ordo/myPhysicsCalculation/package/src/Spin/Spin.cpp \
+ /home/hjy_work/myPhysicsCalculation/package/src/Spin/Spin.cpp \
  /usr/include/stdc-predef.h \
- /home/Veritas_Ordo/myPhysicsCalculation/package/src/Spin/../../include/Spin/Spin.h \
+ /home/hjy_work/myPhysicsCalculation/package/src/Spin/../../include/Spin/Spin.h \
  /usr/include/c++/8/cmath \
  /usr/include/x86_64-linux-gnu/c++/8/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/8/bits/os_defines.h \

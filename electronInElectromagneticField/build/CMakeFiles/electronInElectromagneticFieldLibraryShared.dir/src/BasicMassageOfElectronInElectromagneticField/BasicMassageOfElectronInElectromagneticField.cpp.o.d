@@ -1,8 +1,8 @@
 CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o: \
- /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp \
+ /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp \
  /usr/include/stdc-predef.h \
- /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.h \
- /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/../../../package/include/LorentzVector/LorentzVector.h \
+ /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.h \
+ /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/../../../package/include/LorentzVector/LorentzVector.h \
  /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/8/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/8/bits/os_defines.h \
@@ -150,6 +150,7 @@ CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfEle
  /usr/include/c++/8/bits/basic_ios.tcc /usr/include/c++/8/ostream \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/bits/istream.tcc \
  /usr/include/c++/8/bits/sstream.tcc \
- /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/../../../package/include/Dimension3Vector/Dimension3Vector.h \
- /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/../../../package/include/ElectronBase/ElectronBase.h \
- /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/../../../package/include/ElectronBase/../Spin/Spin.h
+ /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/../../../package/include/Dimension3Vector/Dimension3Vector.h \
+ /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/../../../package/include/Particle/Particle.h \
+ /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/../../../package/include/Particle/../Spin/Spin.h \
+ /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/../../include/BasicMassageOfElectronInElectromagneticField/../../../package/include/LaserField/LaserField.h

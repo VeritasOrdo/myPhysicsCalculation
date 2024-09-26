@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../lib/libelectronInElectromagneticField.so"
   "CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o"
   "CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o.d"
+  "CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o"
+  "CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

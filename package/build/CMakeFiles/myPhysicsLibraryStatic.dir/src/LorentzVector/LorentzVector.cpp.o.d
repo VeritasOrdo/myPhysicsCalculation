@@ -1,7 +1,7 @@
 CMakeFiles/myPhysicsLibraryStatic.dir/src/LorentzVector/LorentzVector.cpp.o: \
- /home/Veritas_Ordo/myPhysicsCalculation/package/src/LorentzVector/LorentzVector.cpp \
+ /home/hjy_work/myPhysicsCalculation/package/src/LorentzVector/LorentzVector.cpp \
  /usr/include/stdc-predef.h \
- /home/Veritas_Ordo/myPhysicsCalculation/package/src/LorentzVector/../../include/LorentzVector/LorentzVector.h \
+ /home/hjy_work/myPhysicsCalculation/package/src/LorentzVector/../../include/LorentzVector/LorentzVector.h \
  /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/8/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/8/bits/os_defines.h \

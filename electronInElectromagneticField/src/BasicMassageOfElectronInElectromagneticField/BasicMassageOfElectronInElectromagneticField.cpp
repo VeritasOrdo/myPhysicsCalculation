@@ -1,17 +1,45 @@
 #include "../../include/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.h"
 
-BasicMassageOfElectronInElectromagneticField::BasicMassageOfElectronInElectromagneticField(double fieldParameter1,double fieldParameter2){
-    this->fieldParameter1 = fieldParameter1;
-    this->fieldParameter2 = fieldParameter2;
+BasicMassageOfElectronInElectromagneticField::BasicMassageOfElectronInElectromagneticField() {
+    this->electronBaseIn = Particle("electron");
+    this->electronBaseOut = Particle("electron");
+    this->laserField1 = LaserField();
+    this->laserField2 = LaserField();
 }
 
-double BasicMassageOfElectronInElectromagneticField::getFieldParameter1(){
-    return this->fieldParameter1;
+BasicMassageOfElectronInElectromagneticField::BasicMassageOfElectronInElectromagneticField(LaserField laserField1, LaserField laserField2) {
+    this->electronBaseIn = Particle("electron");
+    this->electronBaseOut = Particle("electron");
+    this->laserField1 = laserField1;
+    this->laserField2 = laserField2;
 }
 
-double BasicMassageOfElectronInElectromagneticField::getFieldParameter2(){
-    return this->fieldParameter2;
+BasicMassageOfElectronInElectromagneticField::BasicMassageOfElectronInElectromagneticField(Particle electronBaseIn, Particle electronBaseOut, LaserField laserField1, LaserField laserField2) {
+    this->electronBaseIn = electronBaseIn;
+    this->electronBaseOut = electronBaseOut;
+    this->laserField1 = laserField1;
+    this->laserField2 = laserField2;
 }
 
-BasicMassageOfElectronInElectromagneticField::~BasicMassageOfElectronInElectromagneticField(){
+Particle BasicMassageOfElectronInElectromagneticField::getElectronBaseIn() {
+    return this->electronBaseIn;
+}
+
+Particle BasicMassageOfElectronInElectromagneticField::getElectronBaseOut() {
+    return this->electronBaseOut;
+}
+
+LaserField BasicMassageOfElectronInElectromagneticField::getLaserField1() {
+    return this->laserField1;
+}
+
+LaserField BasicMassageOfElectronInElectromagneticField::getLaserField2() {
+    return this->laserField2;
+}
+
+BasicMassageOfElectronInElectromagneticField::~BasicMassageOfElectronInElectromagneticField() {
+    this->electronBaseIn.~Particle();
+    this->electronBaseOut.~Particle();
+    this->laserField1.~LaserField();
+    this->laserField2.~LaserField();
 }

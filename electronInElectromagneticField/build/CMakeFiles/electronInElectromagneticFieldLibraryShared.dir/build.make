@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField
+CMAKE_SOURCE_DIR = /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build
+CMAKE_BINARY_DIR = /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/depend.make
@@ -72,29 +72,45 @@ include CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/flags.make
 CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o: CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/flags.make
 CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o: ../src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp
 CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o: CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o -MF CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o.d -o CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o -c /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o -MF CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o.d -o CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o -c /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp
 
 CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp > CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp > CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.i
 
 CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp -o CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp -o CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.s
+
+CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o: CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/flags.make
+CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o: ../src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp
+CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o: CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o -MF CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o.d -o CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o -c /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp
+
+CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp > CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.i
+
+CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp -o CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.s
 
 # Object files for target electronInElectromagneticFieldLibraryShared
 electronInElectromagneticFieldLibraryShared_OBJECTS = \
-"CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o"
+"CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o" \
+"CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o"
 
 # External object files for target electronInElectromagneticFieldLibraryShared
 electronInElectromagneticFieldLibraryShared_EXTERNAL_OBJECTS =
 
 ../lib/libelectronInElectromagneticField.so: CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.o
+../lib/libelectronInElectromagneticField.so: CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o
 ../lib/libelectronInElectromagneticField.so: CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/build.make
 ../lib/libelectronInElectromagneticField.so: ../../package/lib/libsomeBasicPackage.so
 ../lib/libelectronInElectromagneticField.so: CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library ../lib/libelectronInElectromagneticField.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../lib/libelectronInElectromagneticField.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -106,6 +122,6 @@ CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/clean:
 .PHONY : CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/clean
 
 CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/depend:
-	cd /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField
+CMAKE_SOURCE_DIR = /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build
+CMAKE_BINARY_DIR = /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/Veritas_Ordo/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -169,6 +169,33 @@ src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectro
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/build.make CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.s
 .PHONY : src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.cpp.s
 
+src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.o: src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o
+.PHONY : src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.o
+
+# target to build an object file
+src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir/build.make CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/build.make CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o
+.PHONY : src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.o
+
+src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.i: src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.i
+.PHONY : src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.i
+
+# target to preprocess a source file
+src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir/build.make CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/build.make CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.i
+.PHONY : src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.i
+
+src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.s: src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.s
+.PHONY : src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.s
+
+# target to generate assembly for a file
+src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir/build.make CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/build.make CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.s
+.PHONY : src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.o"
 	@echo "... src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.i"
 	@echo "... src/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.s"
+	@echo "... src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.o"
+	@echo "... src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.i"
+	@echo "... src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.s"
 .PHONY : help
 
 
