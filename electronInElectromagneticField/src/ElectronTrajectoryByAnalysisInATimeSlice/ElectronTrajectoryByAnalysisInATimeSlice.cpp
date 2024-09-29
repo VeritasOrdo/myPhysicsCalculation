@@ -34,12 +34,15 @@ void ElectronTrajectoryByAnalysisInATimeSlice::calculateElectronStateFinal() {
     double LaserFrequency2 = laserField2.getLaserFrequency();
     double properTime = this->properTimeSlice;
     Dimension3Vector<double> electronVelocity = this->electronStateInitial.getParticleVelocity();
+    LorentzVector<double> electronLorentzMomentum = this->electronStateInitial.getParticleLorentzMomentum();
     double electronEnergy = this->electronStateInitial.getParticleEnergy();
-    double momentumZPrime = electronVelocity.getZ();
-    double momentumXPrime = electronVelocity.getX();
-    double phase1 = ((LaserFrequency1*electronEnergy*(1-electronVelocity.getZ()))/electronMass)*properTime;
-    double phase2 = ((LaserFrequency2*electronEnergy*(1+electronVelocity.getZ()))/electronMass)*properTime;
-    LorentzVector<double> electronLorentzMomentum = LorentzVector<double>(
+    double momentumZPrime = electronLorentzMomentum.getZ();
+    double momentumXPrime = electronLorentzMomentum.getX();
+    double electronVelocityZ = electronVelocity.getZ();
+    double electronVelocityX = electronVelocity.getX();
+    double phase1 = ((LaserFrequency1*electronEnergy*(1-electronVelocityZ))/electronMass)*properTime;
+    double phase2 = ((LaserFrequency2*electronEnergy*(1+electronVelocityZ))/electronMass)*properTime;
+    /*LorentzVector<double> electronLorentzMomentum = LorentzVector<double>(
         electronEnergy+
         momentumXPrime*LaserFrequency1*(
             ((electronMass*fieldParameter1)/(LaserFrequency1*electronEnergy*(1-electronVelocity.getZ())))*std::cos(phase1)+
@@ -58,8 +61,30 @@ void ElectronTrajectoryByAnalysisInATimeSlice::calculateElectronStateFinal() {
             ((electronMass*fieldParameter2)/(LaserFrequency2*electronEnergy*(1+electronVelocity.getZ())))*std::cos(phase2)
         )+
         ((2*electronMass*electronMass*fieldParameter1*fieldParameter2*LaserFrequency1)/(-2*LaserFrequency1*electronEnergy*electronVelocity.getZ()))*std::cos(phase1-phase2)
+    );*/
+    LorentzVector<double> electronLorentzMomentumNow = LorentzVector<double>(
+        electronEnergy+
+        momentumXPrime*LaserFrequency1*(
+            ((electronMass*fieldParameter1)/(LaserFrequency1*electronEnergy*(1-electronVelocityZ)))*std::cos(phase1)+
+            ((electronMass*fieldParameter2)/(LaserFrequency2*electronEnergy*(1+electronVelocityZ)))*std::cos(phase2)
+        )
+        ,
+        momentumXPrime+
+        ((electronMass*fieldParameter1)/(LaserFrequency1*electronEnergy*(1-electronVelocityZ)))*std::cos(phase1)+
+        ((electronMass*fieldParameter2)/(LaserFrequency2*electronEnergy*(1+electronVelocityZ)))*std::cos(phase2)
+        ,
+        electronVelocity.getY()+
+        ((electronMass*fieldParameter1)/(LaserFrequency1*electronEnergy*(1-electronVelocityZ)))*std::sin(phase1)+
+        ((electronMass*fieldParameter2)/(LaserFrequency2*electronEnergy*(1+electronVelocityZ)))*std::sin(phase2)
+        ,
+        momentumZPrime+
+        momentumXPrime*LaserFrequency1*(
+            ((electronMass*fieldParameter1)/(LaserFrequency1*electronEnergy*(1-electronVelocityZ)))*std::cos(phase1)-
+            ((electronMass*fieldParameter2)/(LaserFrequency2*electronEnergy*(1+electronVelocityZ)))*std::cos(phase2)
+        )+
+        ((2*electronMass*electronMass*fieldParameter1*fieldParameter2*LaserFrequency1)/(-2*LaserFrequency1*electronEnergy*electronVelocityZ))*std::cos(phase1-phase2)
     );
-    LorentzVector<double> electronCoordinate = LorentzVector<double>(
+    /*LorentzVector<double> electronCoordinate = LorentzVector<double>(
         ((electronEnergy)/electronMass)*properTime+
         momentumXPrime*LaserFrequency1*(
             ((electronMass*fieldParameter1)/((LaserFrequency1*electronEnergy*(1-electronVelocity.getZ()))*(LaserFrequency1*electronEnergy*(1-electronVelocity.getZ()))))*std::sin(phase1)+
@@ -79,8 +104,29 @@ void ElectronTrajectoryByAnalysisInATimeSlice::calculateElectronStateFinal() {
             ((electronMass*fieldParameter1)/((LaserFrequency1*electronEnergy*(1-electronVelocity.getZ()))*(LaserFrequency1*((electronEnergy))*(1-electronVelocity.getZ()))))*std::sin(phase1)-
             ((electronMass*fieldParameter2)/((LaserFrequency2*electronEnergy*(1+electronVelocity.getZ()))*(LaserFrequency2*((electronEnergy))*(1+electronVelocity.getZ()))))*std::sin(phase2)
         ))
+    );*/
+    LorentzVector<double> electronCoordinateNow = LorentzVector<double>(
+        ((electronEnergy)/electronMass)*properTime+
+        momentumXPrime*LaserFrequency1*(
+            ((electronMass*fieldParameter1)/((LaserFrequency1*electronEnergy*(1-electronVelocityZ))*(LaserFrequency1*electronEnergy*(1-electronVelocityZ))))*std::sin(phase1)+
+            ((electronMass*fieldParameter2)/((LaserFrequency2*electronEnergy*(1+electronVelocityZ))*(LaserFrequency2*electronEnergy*(1+electronVelocityZ))))*std::sin(phase2)
+        )
+        ,
+        ((momentumXPrime)/electronMass)*properTime+
+        ((electronMass*fieldParameter1)/(LaserFrequency1*((electronEnergy))*(1-electronVelocityZ)))*std::sin(phase1)+
+        ((electronMass*fieldParameter1)/(LaserFrequency1*((electronEnergy))*(1+electronVelocityZ)))*std::sin(phase2)
+        ,
+        -((electronMass*fieldParameter1)/(LaserFrequency1*(electronEnergy))*(1-electronVelocityZ))*std::cos(phase1)-
+        ((electronMass*fieldParameter2)/(LaserFrequency2*(electronEnergy))*(1+electronVelocityZ))*std::cos(phase2)
+        ,
+        ((momentumZPrime)/electronMass)*properTime+
+        ((2*electronMass*electronMass*fieldParameter1*fieldParameter2*LaserFrequency1)/((-2*LaserFrequency1*electronEnergy*electronVelocityZ)*(-2*LaserFrequency1*electronEnergy*electronVelocityZ)))*std::sin(phase1-phase2)+
+        ((momentumXPrime)*LaserFrequency1*(
+            ((electronMass*fieldParameter1)/((LaserFrequency1*electronEnergy*(1-electronVelocityZ))*(LaserFrequency1*((electronEnergy))*(1-electronVelocityZ))))*std::sin(phase1)-
+            ((electronMass*fieldParameter2)/((LaserFrequency2*electronEnergy*(1+electronVelocityZ))*(LaserFrequency2*((electronEnergy))*(1+electronVelocityZ))))*std::sin(phase2)
+        ))
     );
-    this->electronStateFinal = ParticleState(electronLorentzMomentum,electronCoordinate);
+    this->electronStateFinal = ParticleState(electronLorentzMomentumNow,electronCoordinateNow);
 }
 
 ElectronTrajectoryByAnalysisInATimeSlice::~ElectronTrajectoryByAnalysisInATimeSlice() {

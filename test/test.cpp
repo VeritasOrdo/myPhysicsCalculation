@@ -1,21 +1,27 @@
 #include "../package/include/Dimension3Vector/Dimension3Vector.h"
 #include "../package/include/LorentzVector/LorentzVector.h"
-#include "../package/include/ElectronBase/ElectronBase.h"
+#include "../electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.h"
 #include <iostream>
 
 int main() {
-    /*LorentzVector<double> v1(1, 2, 3, 4);
-    LorentzVector<double> v2(5, 6, 7, 8);
-    LorentzVector<double> v3 = v1 + v2;
-    std::cout << v3 << std::endl;*/
-    /*Dimension3Vector<double> v1(1, 2, 3);
-    Dimension3Vector<double> v2(4, 5, 6);
-    Dimension3Vector<double> v3 = v1 + v2;
-    std::cout << v3 << std::endl;*/
-    ElectronBase electron(1, Dimension3Vector<double>(1, 2, 3));
-    std::cout << electron.getEnergy() << std::endl;
-    std::cout << electron.getMomentum() << std::endl;
-    std::cout << electron.getPosition() << std::endl;
-    std::cout << electron.getSpin().getSpinValue() << std::endl;
-    return 0;
+    double propertime = 3;
+    double fieldParameter1 = 0.3;
+    double fieldParameter2 = 2.0;
+    double laserFrequency = 1.55;
+    double electronMass = 510998.9461;
+    double reducedMass = electronMass*std::sqrt(1+fieldParameter1*fieldParameter1+fieldParameter2*fieldParameter2);
+    double energyInitial = 30*reducedMass;
+    double momentumXPrime = 0;
+    double momentumZPrime = std::sqrt(energyInitial*energyInitial-reducedMass*reducedMass-momentumXPrime*momentumXPrime);
+    LorentzVector<double> momentumInitial(energyInitial,momentumXPrime,0,momentumZPrime);
+    LaserField laserField1(fieldParameter1,laserFrequency);
+    LaserField laserField2(fieldParameter2,laserFrequency);
+    ParticleState particleStateInitial(momentumInitial);
+    ElectronTrajectoryByAnalysisInATimeSlice electronTrajectoryByAnalysisInATimeSlice(propertime,particleStateInitial,laserField1,laserField2);
+    electronTrajectoryByAnalysisInATimeSlice.calculateElectronStateFinal(); 
+    std::cout << "electronStateFinal: " << std::endl;
+    std::cout << "energy: " << electronTrajectoryByAnalysisInATimeSlice.getElectronStateFinal().getParticleEnergy() << '\t';
+    std::cout << "velocityX: " << electronTrajectoryByAnalysisInATimeSlice.getElectronStateFinal().getParticleVelocity().getX() << '\t';
+    std::cout << "velocityY: " << electronTrajectoryByAnalysisInATimeSlice.getElectronStateFinal().getParticleVelocity().getY() << '\t';
+    std::cout << "velocityZ: " << electronTrajectoryByAnalysisInATimeSlice.getElectronStateFinal().getParticleVelocity().getZ() << std::endl;
 }

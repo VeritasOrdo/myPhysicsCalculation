@@ -1,0 +1,3 @@
+/home/hjy_work/myPhysicsCalculation/test/build/CMakeFiles/test.dir
+/home/hjy_work/myPhysicsCalculation/test/build/CMakeFiles/edit_cache.dir
+/home/hjy_work/myPhysicsCalculation/test/build/CMakeFiles/rebuild_cache.dir
