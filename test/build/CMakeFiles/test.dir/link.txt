@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/test.dir/test.cpp.o -o test  ../../electronInElectromagneticField/lib/libelectronInElectromagneticField.a ../../package/lib/libsomeBasicPackage.a 
+/usr/bin/c++  -O3 CMakeFiles/test.dir/test.cpp.o -o test  ../../electronInElectromagneticField/lib/libelectronInElectromagneticField.a ../../package/lib/libsomeBasicPackage.a 

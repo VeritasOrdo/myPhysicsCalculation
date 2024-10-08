@@ -2,9 +2,9 @@
 #include "../package/include/LorentzVector/LorentzVector.h"
 #include "../electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.h"
 #include <iostream>
+#include <chrono>
 
 int main() {
-    double propertime = 3;
     double fieldParameter1 = 0.3;
     double fieldParameter2 = 2.0;
     double laserFrequency = 1.55;
@@ -17,11 +17,13 @@ int main() {
     LaserField laserField1(fieldParameter1,laserFrequency);
     LaserField laserField2(fieldParameter2,laserFrequency);
     ParticleState particleStateInitial(momentumInitial);
-    ElectronTrajectoryByAnalysisInATimeSlice electronTrajectoryByAnalysisInATimeSlice(propertime,particleStateInitial,laserField1,laserField2);
-    electronTrajectoryByAnalysisInATimeSlice.calculateElectronStateFinal(); 
-    std::cout << "electronStateFinal: " << std::endl;
-    std::cout << "energy: " << electronTrajectoryByAnalysisInATimeSlice.getElectronStateFinal().getParticleEnergy() << '\t';
-    std::cout << "velocityX: " << electronTrajectoryByAnalysisInATimeSlice.getElectronStateFinal().getParticleVelocity().getX() << '\t';
-    std::cout << "velocityY: " << electronTrajectoryByAnalysisInATimeSlice.getElectronStateFinal().getParticleVelocity().getY() << '\t';
-    std::cout << "velocityZ: " << electronTrajectoryByAnalysisInATimeSlice.getElectronStateFinal().getParticleVelocity().getZ() << std::endl;
+    std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
+    ElectronTrajectoryByAnalysisInATimeSlice electronTrajectoryByAnalysisInATimeSlice(0,particleStateInitial,laserField1,laserField2);
+    for(double properTimeSlice=0;properTimeSlice<100;properTimeSlice+=0.001) {
+        electronTrajectoryByAnalysisInATimeSlice.setProperTimeSlice(properTimeSlice);
+        electronTrajectoryByAnalysisInATimeSlice.calculateElectronStateFinal();
+    }
+    std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
+    std::cout << "Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(end-begin).count() << "ms" << std::endl;
+    return 0;
 }
