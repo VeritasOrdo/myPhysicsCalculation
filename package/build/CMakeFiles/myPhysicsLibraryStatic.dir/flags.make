@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/hjy_work/myPhysicsCalculation/package/include/../include/Dimension3Vector -I/home/hjy_work/myPhysicsCalculation/package/include/../include/LaserField -I/home/hjy_work/myPhysicsCalculation/package/include/../include/LorentzVector -I/home/hjy_work/myPhysicsCalculation/package/include/../include/Particle -I/home/hjy_work/myPhysicsCalculation/package/include/../include/ParticleState -I/home/hjy_work/myPhysicsCalculation/package/include/../include/Spin
 
-CXX_FLAGS = 
+CXX_FLAGS =  -O3
 

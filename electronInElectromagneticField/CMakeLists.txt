@@ -50,3 +50,6 @@ set_target_properties(electronInElectromagneticFieldLibraryShared PROPERTIES LIB
 # link the libraries
 target_link_libraries(electronInElectromagneticFieldLibraryStatic myPhysicsLibraryStatic)
 target_link_libraries(electronInElectromagneticFieldLibraryShared myPhysicsLibraryShared)
+
+# Optimization flags
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")

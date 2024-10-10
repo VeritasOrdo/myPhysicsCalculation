@@ -6,5 +6,5 @@ CXX_DEFINES = -DelectronInElectromagneticFieldLibraryShared_EXPORTS
 
 CXX_INCLUDES = -I/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/../include/BasicMassageOfElectronInElectromagneticField -I/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/../include/ElectronTrajectoryByAnalysisInATimeSlice
 
-CXX_FLAGS = -fPIC
+CXX_FLAGS =  -O3 -fPIC
 
