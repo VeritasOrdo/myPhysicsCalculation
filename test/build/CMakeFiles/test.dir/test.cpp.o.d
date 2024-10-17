@@ -153,19 +153,20 @@ CMakeFiles/test.dir/test.cpp.o: \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/bits/istream.tcc \
  /usr/include/c++/8/bits/sstream.tcc \
  /home/hjy_work/myPhysicsCalculation/test/../package/include/LorentzVector/LorentzVector.h \
+ /home/hjy_work/myPhysicsCalculation/test/../package/include/ParticleState/ParticleState.h \
+ /home/hjy_work/myPhysicsCalculation/test/../package/include/ParticleState/../Particle/Particle.h \
+ /home/hjy_work/myPhysicsCalculation/test/../package/include/ParticleState/../Particle/../Spin/Spin.h \
  /home/hjy_work/myPhysicsCalculation/test/../electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.h \
  /home/hjy_work/myPhysicsCalculation/test/../electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/../BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.h \
- /home/hjy_work/myPhysicsCalculation/test/../electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/../BasicMassageOfElectronInElectromagneticField/../../../package/include/Particle/Particle.h \
- /home/hjy_work/myPhysicsCalculation/test/../electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/../BasicMassageOfElectronInElectromagneticField/../../../package/include/Particle/../Spin/Spin.h \
  /home/hjy_work/myPhysicsCalculation/test/../electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/../BasicMassageOfElectronInElectromagneticField/../../../package/include/LaserField/LaserField.h \
- /home/hjy_work/myPhysicsCalculation/test/../electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/../../../package/include/ParticleState/ParticleState.h \
- /home/hjy_work/myPhysicsCalculation/test/../package/include/NumericalSolveOfMotionEquationBase/NumericalSolveOfMotionEquationBase.h \
+ /home/hjy_work/myPhysicsCalculation/test/../package/include/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.h \
+ /home/hjy_work/myPhysicsCalculation/test/../package/include/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/../NumericalSolveOfMotionEquationBase/NumericalSolveOfMotionEquationBase.h \
  /usr/include/c++/8/functional /usr/include/c++/8/tuple \
  /usr/include/c++/8/utility /usr/include/c++/8/bits/stl_relops.h \
  /usr/include/c++/8/array /usr/include/c++/8/bits/uses_allocator.h \
  /usr/include/c++/8/bits/invoke.h /usr/include/c++/8/bits/refwrap.h \
  /usr/include/c++/8/bits/std_function.h \
- /home/hjy_work/myPhysicsCalculation/test/../package/include/NumericalSolveOfMotionEquationBase/../../src/NumericalSolveOfMotionEquationBase/NumericalSolveOfMotionEquationBase.tpp \
+ /home/hjy_work/myPhysicsCalculation/test/../package/include/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/../NumericalSolveOfMotionEquationBase/../../src/NumericalSolveOfMotionEquationBase/NumericalSolveOfMotionEquationBase.tpp \
  /usr/include/c++/8/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/8/bits/cxxabi_tweaks.h \
  /usr/include/c++/8/memory /usr/include/c++/8/bits/stl_tempbuf.h \
@@ -180,6 +181,9 @@ CMakeFiles/test.dir/test.cpp.o: \
  /usr/include/c++/8/bits/atomic_base.h \
  /usr/include/c++/8/bits/atomic_lockfree_defines.h \
  /usr/include/c++/8/backward/auto_ptr.h /usr/include/c++/8/iostream \
- /usr/include/c++/8/chrono /usr/include/c++/8/ratio \
- /usr/include/c++/8/limits /usr/include/c++/8/ctime \
- /usr/include/c++/8/bits/parse_numbers.h
+ /usr/include/c++/8/fstream /usr/include/c++/8/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/8/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/8/bits/c++io.h \
+ /usr/include/c++/8/bits/fstream.tcc /usr/include/c++/8/chrono \
+ /usr/include/c++/8/ratio /usr/include/c++/8/limits \
+ /usr/include/c++/8/ctime /usr/include/c++/8/bits/parse_numbers.h

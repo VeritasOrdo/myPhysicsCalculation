@@ -5,6 +5,14 @@
 #include <memory>
 
 template <typename FunctionType>
+NumericalSolveOfMotionEquationBase<FunctionType>::NumericalSolveOfMotionEquationBase() {
+    this->timeBegin = 0;
+    this->timeEnd = 0;
+    this->stepLength = 0;
+    this->motionEquation = nullptr;
+}
+
+template <typename FunctionType>
 NumericalSolveOfMotionEquationBase<FunctionType>::NumericalSolveOfMotionEquationBase(double timeBegin, double timeEnd, double stepLength, std::function<FunctionType> motionEquation) {
     this->timeBegin = timeBegin;
     this->timeEnd = timeEnd;
@@ -53,8 +61,25 @@ std::string NumericalSolveOfMotionEquationBase<FunctionType>::getMotionEquationT
 }
 
 template <typename FunctionType>
+std::function<FunctionType> NumericalSolveOfMotionEquationBase<FunctionType>::getMotionEquation() {
+    return this->motionEquation;
+}
+
+template <typename FunctionType>
 void NumericalSolveOfMotionEquationBase<FunctionType>::setMotionEquation(std::function<FunctionType> motionEquation) {
     this->motionEquation = motionEquation;
+}
+
+template <typename FunctionType>
+std::vector<double> NumericalSolveOfMotionEquationBase<FunctionType>::getTimeList() {
+    std::vector<double> timeList;
+    // 预先计算需要的容量并分配内存
+    size_t size = static_cast<size_t>((this->timeEnd - this->timeBegin) / this->stepLength);
+    timeList.reserve(size);
+    for(double time = this->timeBegin; time < this->timeEnd; time += this->stepLength) {
+        timeList.push_back(time);
+    }
+    return timeList;
 }
 
 template <typename FunctionType>

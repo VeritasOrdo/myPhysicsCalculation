@@ -111,10 +111,24 @@ CMakeFiles/myPhysicsLibraryStatic.dir/src/LorentzVector/LorentzVector.cpp.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myPhysicsLibraryStatic.dir/src/LorentzVector/LorentzVector.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjy_work/myPhysicsCalculation/package/src/LorentzVector/LorentzVector.cpp -o CMakeFiles/myPhysicsLibraryStatic.dir/src/LorentzVector/LorentzVector.cpp.s
 
+CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.o: CMakeFiles/myPhysicsLibraryStatic.dir/flags.make
+CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.o: ../src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp
+CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.o: CMakeFiles/myPhysicsLibraryStatic.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjy_work/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.o -MF CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.o.d -o CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.o -c /home/hjy_work/myPhysicsCalculation/package/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp
+
+CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hjy_work/myPhysicsCalculation/package/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp > CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.i
+
+CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hjy_work/myPhysicsCalculation/package/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp -o CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.s
+
 CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o: CMakeFiles/myPhysicsLibraryStatic.dir/flags.make
 CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o: ../src/Particle/Particle.cpp
 CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o: CMakeFiles/myPhysicsLibraryStatic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjy_work/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjy_work/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o -MF CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o.d -o CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o -c /home/hjy_work/myPhysicsCalculation/package/src/Particle/Particle.cpp
 
 CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.s: cmake_force
 CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o: CMakeFiles/myPhysicsLibraryStatic.dir/flags.make
 CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o: ../src/ParticleState/ParticleState.cpp
 CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o: CMakeFiles/myPhysicsLibraryStatic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjy_work/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjy_work/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o -MF CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o.d -o CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o -c /home/hjy_work/myPhysicsCalculation/package/src/ParticleState/ParticleState.cpp
 
 CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.s: cma
 CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o: CMakeFiles/myPhysicsLibraryStatic.dir/flags.make
 CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o: ../src/Spin/Spin.cpp
 CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o: CMakeFiles/myPhysicsLibraryStatic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjy_work/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hjy_work/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o -MF CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o.d -o CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o -c /home/hjy_work/myPhysicsCalculation/package/src/Spin/Spin.cpp
 
 CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.i: cmake_force
@@ -158,6 +172,7 @@ myPhysicsLibraryStatic_OBJECTS = \
 "CMakeFiles/myPhysicsLibraryStatic.dir/src/Dimension3Vector/Dimension3Vector.cpp.o" \
 "CMakeFiles/myPhysicsLibraryStatic.dir/src/LaserField/LaserField.cpp.o" \
 "CMakeFiles/myPhysicsLibraryStatic.dir/src/LorentzVector/LorentzVector.cpp.o" \
+"CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.o" \
 "CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o" \
 "CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o" \
 "CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o"
@@ -168,12 +183,13 @@ myPhysicsLibraryStatic_EXTERNAL_OBJECTS =
 ../lib/libsomeBasicPackage.a: CMakeFiles/myPhysicsLibraryStatic.dir/src/Dimension3Vector/Dimension3Vector.cpp.o
 ../lib/libsomeBasicPackage.a: CMakeFiles/myPhysicsLibraryStatic.dir/src/LaserField/LaserField.cpp.o
 ../lib/libsomeBasicPackage.a: CMakeFiles/myPhysicsLibraryStatic.dir/src/LorentzVector/LorentzVector.cpp.o
+../lib/libsomeBasicPackage.a: CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.o
 ../lib/libsomeBasicPackage.a: CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o
 ../lib/libsomeBasicPackage.a: CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o
 ../lib/libsomeBasicPackage.a: CMakeFiles/myPhysicsLibraryStatic.dir/src/Spin/Spin.cpp.o
 ../lib/libsomeBasicPackage.a: CMakeFiles/myPhysicsLibraryStatic.dir/build.make
 ../lib/libsomeBasicPackage.a: CMakeFiles/myPhysicsLibraryStatic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hjy_work/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../lib/libsomeBasicPackage.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hjy_work/myPhysicsCalculation/package/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../lib/libsomeBasicPackage.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/myPhysicsLibraryStatic.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myPhysicsLibraryStatic.dir/link.txt --verbose=$(VERBOSE)
 

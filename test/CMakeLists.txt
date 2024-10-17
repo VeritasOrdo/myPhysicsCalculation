@@ -18,5 +18,8 @@ set_target_properties(electronInElectromagneticFieldLibraryStatic PROPERTIES IMP
 # link the libraries
 target_link_libraries(test electronInElectromagneticFieldLibraryStatic myPhysicsLibraryStatic)
 
+# link the gsl library
+target_link_libraries(test gsl gslcblas)
+
 # Optimization flags
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")

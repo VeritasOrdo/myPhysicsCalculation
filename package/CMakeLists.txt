@@ -39,5 +39,9 @@ add_library(myPhysicsLibraryShared SHARED ${all_sources})
 set_target_properties(myPhysicsLibraryStatic PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/lib OUTPUT_NAME someBasicPackage)
 set_target_properties(myPhysicsLibraryShared PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/lib OUTPUT_NAME someBasicPackage)
 
+# link the gsl library
+target_link_libraries(myPhysicsLibraryStatic gsl gslcblas)
+target_link_libraries(myPhysicsLibraryShared gsl gslcblas)
+
 # Optimization flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")

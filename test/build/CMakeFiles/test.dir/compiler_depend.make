@@ -191,12 +191,13 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
   /usr/include/c++/8/bits/istream.tcc \
   /usr/include/c++/8/bits/sstream.tcc \
   /home/hjy_work/myPhysicsCalculation/package/include/LorentzVector/LorentzVector.h \
-  /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.h \
-  /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.h \
+  /home/hjy_work/myPhysicsCalculation/package/include/ParticleState/ParticleState.h \
   /home/hjy_work/myPhysicsCalculation/package/include/Particle/Particle.h \
   /home/hjy_work/myPhysicsCalculation/package/include/Spin/Spin.h \
+  /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.h \
+  /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.h \
   /home/hjy_work/myPhysicsCalculation/package/include/LaserField/LaserField.h \
-  /home/hjy_work/myPhysicsCalculation/package/include/ParticleState/ParticleState.h \
+  /home/hjy_work/myPhysicsCalculation/package/include/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.h \
   /home/hjy_work/myPhysicsCalculation/package/include/NumericalSolveOfMotionEquationBase/NumericalSolveOfMotionEquationBase.h \
   /usr/include/c++/8/functional \
   /usr/include/c++/8/tuple \
@@ -224,6 +225,11 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
   /usr/include/c++/8/bits/atomic_lockfree_defines.h \
   /usr/include/c++/8/backward/auto_ptr.h \
   /usr/include/c++/8/iostream \
+  /usr/include/c++/8/fstream \
+  /usr/include/c++/8/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/8/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/8/bits/c++io.h \
+  /usr/include/c++/8/bits/fstream.tcc \
   /usr/include/c++/8/chrono \
   /usr/include/c++/8/ratio \
   /usr/include/c++/8/limits \
@@ -232,6 +238,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 
 /usr/include/c++/8/limits:
+
+/usr/include/x86_64-linux-gnu/c++/8/bits/basic_file.h:
 
 /usr/include/c++/8/iostream:
 
@@ -263,6 +271,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /usr/include/c++/8/bits/stl_relops.h:
 
+/usr/include/c++/8/bits/codecvt.h:
+
 /usr/include/c++/8/bits/shared_ptr.h:
 
 /usr/include/c++/8/utility:
@@ -271,13 +281,13 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /home/hjy_work/myPhysicsCalculation/package/include/NumericalSolveOfMotionEquationBase/NumericalSolveOfMotionEquationBase.h:
 
-/home/hjy_work/myPhysicsCalculation/package/include/ParticleState/ParticleState.h:
+/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.h:
 
 /home/hjy_work/myPhysicsCalculation/package/include/Spin/Spin.h:
 
 /home/hjy_work/myPhysicsCalculation/package/include/Particle/Particle.h:
 
-/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.h:
+/home/hjy_work/myPhysicsCalculation/package/include/ParticleState/ParticleState.h:
 
 /home/hjy_work/myPhysicsCalculation/package/include/LorentzVector/LorentzVector.h:
 
@@ -609,6 +619,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /usr/include/c++/8/bits/refwrap.h:
 
+/home/hjy_work/myPhysicsCalculation/package/include/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.h:
+
 /usr/include/c++/8/cctype:
 
 /usr/include/locale.h:
@@ -645,6 +657,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /usr/include/time.h:
 
+/usr/include/c++/8/bits/fstream.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
@@ -659,9 +673,13 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /usr/include/c++/8/bits/stl_function.h:
 
+/usr/include/x86_64-linux-gnu/c++/8/bits/c++io.h:
+
 /usr/include/c++/8/bits/locale_facets.tcc:
 
 /usr/include/c++/8/bits/basic_string.h:
+
+/usr/include/c++/8/fstream:
 
 /usr/include/c++/8/cstdlib:
 

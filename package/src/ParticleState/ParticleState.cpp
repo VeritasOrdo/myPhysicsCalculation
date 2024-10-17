@@ -3,44 +3,34 @@
 ParticleState::ParticleState() {
     this->particleLorentzMomentum = LorentzVector<double>();
     this->particleLorentzCoordinate = LorentzVector<double>();
-    this->particleMomentum = Dimension3Vector<double>();
-    this->particleVelocity = Dimension3Vector<double>();
-    this->particleCoordinate = Dimension3Vector<double>();
-    this->particleEnergy = this->particleLorentzMomentum[0];
-    this->particleTime = this->particleLorentzCoordinate[0];
 }
 
 ParticleState::ParticleState(LorentzVector<double> particleLorentzMomentum) {
     this->particleLorentzMomentum = particleLorentzMomentum;
     this->particleLorentzCoordinate = LorentzVector<double>();
-    this->particleMomentum = Dimension3Vector<double>(particleLorentzMomentum[1],particleLorentzMomentum[2],particleLorentzMomentum[3]);
-    this->particleVelocity = Dimension3Vector<double>(particleLorentzMomentum[1]/particleLorentzMomentum[0],particleLorentzMomentum[2]/particleLorentzMomentum[0],particleLorentzMomentum[3]/particleLorentzMomentum[0]);
-    this->particleCoordinate = Dimension3Vector<double>();
-    this->particleEnergy = particleLorentzMomentum[0];
-    this->particleTime = this->particleLorentzCoordinate[0];
 }   
 
 ParticleState::ParticleState(LorentzVector<double> particleLorentzMomentum,LorentzVector<double> particleLorentzCoordinate) {
     this->particleLorentzMomentum = particleLorentzMomentum;
     this->particleLorentzCoordinate = particleLorentzCoordinate;
-    this->particleMomentum = Dimension3Vector<double>(particleLorentzMomentum[1],particleLorentzMomentum[2],particleLorentzMomentum[3]);
-    this->particleVelocity = Dimension3Vector<double>(particleLorentzMomentum[1]/particleLorentzMomentum[0],particleLorentzMomentum[2]/particleLorentzMomentum[0],particleLorentzMomentum[3]/particleLorentzMomentum[0]);
-    this->particleCoordinate = Dimension3Vector<double>(particleLorentzCoordinate[1],particleLorentzCoordinate[2],particleLorentzCoordinate[3]);
-    this->particleEnergy = particleLorentzMomentum[0];
-    this->particleTime = particleLorentzCoordinate[0];
+}
+
+ParticleState::ParticleState(Particle particle,Dimension3Vector<double> particleMomentum) {
+    this->particleLorentzMomentum = LorentzVector<double>(std::sqrt(particleMomentum*particleMomentum+particle.getRestMass()*particle.getRestMass()),particleMomentum.getX(),particleMomentum.getY(),particleMomentum.getZ());
+    this->particleLorentzCoordinate = LorentzVector<double>();
+}
+
+ParticleState::ParticleState(Particle particle,Dimension3Vector<double> particleMomentum,LorentzVector<double> particleLorentzCoordinate) {
+    this->particleLorentzMomentum = LorentzVector<double>(std::sqrt(particleMomentum*particleMomentum+particle.getRestMass()*particle.getRestMass()),particleMomentum.getX(),particleMomentum.getY(),particleMomentum.getZ());
+    this->particleLorentzCoordinate = particleLorentzCoordinate;
 }
 
 void ParticleState::changeParticleLorentzMomentum(LorentzVector<double> particleLorentzMomentum) {
     this->particleLorentzMomentum = particleLorentzMomentum;
-    this->particleMomentum = Dimension3Vector<double>(particleLorentzMomentum[1],particleLorentzMomentum[2],particleLorentzMomentum[3]);
-    this->particleVelocity = Dimension3Vector<double>(particleLorentzMomentum[1]/particleLorentzMomentum[0],particleLorentzMomentum[2]/particleLorentzMomentum[0],particleLorentzMomentum[3]/particleLorentzMomentum[0]);
-    this->particleEnergy = particleLorentzMomentum[0];
 }
 
 void ParticleState::changeParticleLorentzCoordinate(LorentzVector<double> particleLorentzCoordinate) {
     this->particleLorentzCoordinate = particleLorentzCoordinate;
-    this->particleCoordinate = Dimension3Vector<double>(particleLorentzCoordinate[1],particleLorentzCoordinate[2],particleLorentzCoordinate[3]);
-    this->particleTime = particleLorentzCoordinate[0];
 }
 
 LorentzVector<double> ParticleState::getParticleLorentzMomentum() {
@@ -52,23 +42,23 @@ LorentzVector<double> ParticleState::getParticleLorentzCoordinate() {
 }
 
 Dimension3Vector<double> ParticleState::getParticleMomentum() {
-    return this->particleMomentum;
+    return Dimension3Vector<double>(this->particleLorentzMomentum.getX(),this->particleLorentzMomentum.getY(),this->particleLorentzMomentum.getZ());
 }
 
 Dimension3Vector<double> ParticleState::getParticleVelocity() {
-    return this->particleVelocity;
+    return Dimension3Vector<double>(this->particleLorentzMomentum.getX()/this->particleLorentzMomentum.getT(),this->particleLorentzMomentum.getY()/this->particleLorentzMomentum.getT(),this->particleLorentzMomentum.getZ()/this->particleLorentzMomentum.getT());
 }
 
 Dimension3Vector<double> ParticleState::getParticleCoordinate() {
-    return this->particleCoordinate;
+    return Dimension3Vector<double>(this->particleLorentzCoordinate.getX(),this->particleLorentzCoordinate.getY(),this->particleLorentzCoordinate.getZ());
 }
 
 double ParticleState::getParticleEnergy() {
-    return this->particleEnergy;
+    return this->particleLorentzMomentum.getT();
 }
 
 double ParticleState::getParticleMass() {
-    return this->particleEnergy;
+    return std::sqrt(this->particleLorentzMomentum*this->particleLorentzMomentum);
 }
 
 ParticleState::~ParticleState() {

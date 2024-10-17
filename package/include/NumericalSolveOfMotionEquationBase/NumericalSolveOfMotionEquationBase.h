@@ -1,5 +1,6 @@
 #include <functional>
 #include <string>   
+#include <vector>
 
 #pragma once
 
@@ -13,6 +14,7 @@ class NumericalSolveOfMotionEquationBase
         double stepLength;
         std::function<FunctionType> motionEquation;
     public:
+        NumericalSolveOfMotionEquationBase();
         NumericalSolveOfMotionEquationBase(double timeBegin, double timeEnd, double stepLength, std::function<FunctionType> motionEquation);
         double getTimeBegin();
         void setTimeBegin(double timeBegin);
@@ -22,6 +24,9 @@ class NumericalSolveOfMotionEquationBase
         void setStepLength(double stepLength);
         std::string getMotionEquationType();
         void setMotionEquation(std::function<FunctionType> motionEquation);
+        virtual std::function<FunctionType> getMotionEquation();
+        std::vector<double> getTimeList();
+        virtual void solve() = 0;
         ~NumericalSolveOfMotionEquationBase();
 };
 
