@@ -250,33 +250,6 @@ src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolve
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.s
 .PHONY : src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.cpp.s
 
-src/Particle/Particle.o: src/Particle/Particle.cpp.o
-.PHONY : src/Particle/Particle.o
-
-# target to build an object file
-src/Particle/Particle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryStatic.dir/build.make CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/Particle/Particle.cpp.o
-.PHONY : src/Particle/Particle.cpp.o
-
-src/Particle/Particle.i: src/Particle/Particle.cpp.i
-.PHONY : src/Particle/Particle.i
-
-# target to preprocess a source file
-src/Particle/Particle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryStatic.dir/build.make CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/Particle/Particle.cpp.i
-.PHONY : src/Particle/Particle.cpp.i
-
-src/Particle/Particle.s: src/Particle/Particle.cpp.s
-.PHONY : src/Particle/Particle.s
-
-# target to generate assembly for a file
-src/Particle/Particle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryStatic.dir/build.make CMakeFiles/myPhysicsLibraryStatic.dir/src/Particle/Particle.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/Particle/Particle.cpp.s
-.PHONY : src/Particle/Particle.cpp.s
-
 src/ParticleState/ParticleState.o: src/ParticleState/ParticleState.cpp.o
 .PHONY : src/ParticleState/ParticleState.o
 
@@ -303,6 +276,33 @@ src/ParticleState/ParticleState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryStatic.dir/build.make CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/ParticleState/ParticleState.cpp.s
 .PHONY : src/ParticleState/ParticleState.cpp.s
+
+src/RadiationBase/RadiationBase.o: src/RadiationBase/RadiationBase.cpp.o
+.PHONY : src/RadiationBase/RadiationBase.o
+
+# target to build an object file
+src/RadiationBase/RadiationBase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryStatic.dir/build.make CMakeFiles/myPhysicsLibraryStatic.dir/src/RadiationBase/RadiationBase.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/RadiationBase/RadiationBase.cpp.o
+.PHONY : src/RadiationBase/RadiationBase.cpp.o
+
+src/RadiationBase/RadiationBase.i: src/RadiationBase/RadiationBase.cpp.i
+.PHONY : src/RadiationBase/RadiationBase.i
+
+# target to preprocess a source file
+src/RadiationBase/RadiationBase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryStatic.dir/build.make CMakeFiles/myPhysicsLibraryStatic.dir/src/RadiationBase/RadiationBase.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/RadiationBase/RadiationBase.cpp.i
+.PHONY : src/RadiationBase/RadiationBase.cpp.i
+
+src/RadiationBase/RadiationBase.s: src/RadiationBase/RadiationBase.cpp.s
+.PHONY : src/RadiationBase/RadiationBase.s
+
+# target to generate assembly for a file
+src/RadiationBase/RadiationBase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryStatic.dir/build.make CMakeFiles/myPhysicsLibraryStatic.dir/src/RadiationBase/RadiationBase.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myPhysicsLibraryShared.dir/build.make CMakeFiles/myPhysicsLibraryShared.dir/src/RadiationBase/RadiationBase.cpp.s
+.PHONY : src/RadiationBase/RadiationBase.cpp.s
 
 src/Spin/Spin.o: src/Spin/Spin.cpp.o
 .PHONY : src/Spin/Spin.o
@@ -353,12 +353,12 @@ help:
 	@echo "... src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.o"
 	@echo "... src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.i"
 	@echo "... src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.s"
-	@echo "... src/Particle/Particle.o"
-	@echo "... src/Particle/Particle.i"
-	@echo "... src/Particle/Particle.s"
 	@echo "... src/ParticleState/ParticleState.o"
 	@echo "... src/ParticleState/ParticleState.i"
 	@echo "... src/ParticleState/ParticleState.s"
+	@echo "... src/RadiationBase/RadiationBase.o"
+	@echo "... src/RadiationBase/RadiationBase.i"
+	@echo "... src/RadiationBase/RadiationBase.s"
 	@echo "... src/Spin/Spin.o"
 	@echo "... src/Spin/Spin.i"
 	@echo "... src/Spin/Spin.s"

@@ -101,7 +101,10 @@ void NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum::solve() {
     double y[6] = {this->particleStateInitial.getParticleCoordinate().getX(), this->particleStateInitial.getParticleCoordinate().getY(), this->particleStateInitial.getParticleCoordinate().getZ(), this->particleStateInitial.getParticleMomentum().getX(), this->particleStateInitial.getParticleMomentum().getY(), this->particleStateInitial.getParticleMomentum().getZ()};
     gsl_odeiv2_system sys = {func, NULL, 6, this};
     gsl_odeiv2_driver *d = gsl_odeiv2_driver_alloc_y_new(&sys, gsl_odeiv2_step_rkf45, NumericalSolveOfMotionEquationBase::getStepLength(), this->relativeError, this->absoluteError);
-    for(int i=1;i<this->positionList.capacity();i++){
+    int cyclicLimit = this->positionList.capacity();
+    for(int i=1;i<cyclicLimit;i++){
+        //progress bar
+        
         double ti = NumericalSolveOfMotionEquationBase::getTimeBegin()+i*NumericalSolveOfMotionEquationBase::getStepLength();
         int status = gsl_odeiv2_driver_apply(d, &t, ti, y);
         if (status != GSL_SUCCESS) {

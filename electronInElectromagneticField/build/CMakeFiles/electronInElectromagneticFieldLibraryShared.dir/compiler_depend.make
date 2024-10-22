@@ -192,7 +192,6 @@ CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/BasicMassageOfEle
   /usr/include/c++/8/bits/istream.tcc \
   /usr/include/c++/8/bits/sstream.tcc \
   /home/hjy_work/myPhysicsCalculation/package/include/Dimension3Vector/Dimension3Vector.h \
-  /home/hjy_work/myPhysicsCalculation/package/include/Particle/Particle.h \
   /home/hjy_work/myPhysicsCalculation/package/include/Spin/Spin.h \
   /home/hjy_work/myPhysicsCalculation/package/include/LaserField/LaserField.h
 
@@ -388,7 +387,6 @@ CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajector
   /usr/include/c++/8/bits/istream.tcc \
   /usr/include/c++/8/bits/sstream.tcc \
   /home/hjy_work/myPhysicsCalculation/package/include/Dimension3Vector/Dimension3Vector.h \
-  /home/hjy_work/myPhysicsCalculation/package/include/Particle/Particle.h \
   /home/hjy_work/myPhysicsCalculation/package/include/Spin/Spin.h \
   /home/hjy_work/myPhysicsCalculation/package/include/LaserField/LaserField.h \
   /home/hjy_work/myPhysicsCalculation/package/include/ParticleState/ParticleState.h \
@@ -402,8 +400,6 @@ CMakeFiles/electronInElectromagneticFieldLibraryShared.dir/src/ElectronTrajector
 ../src/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.cpp:
 
 /home/hjy_work/myPhysicsCalculation/package/include/Spin/Spin.h:
-
-/home/hjy_work/myPhysicsCalculation/package/include/Particle/Particle.h:
 
 /home/hjy_work/myPhysicsCalculation/package/include/Dimension3Vector/Dimension3Vector.h:
 

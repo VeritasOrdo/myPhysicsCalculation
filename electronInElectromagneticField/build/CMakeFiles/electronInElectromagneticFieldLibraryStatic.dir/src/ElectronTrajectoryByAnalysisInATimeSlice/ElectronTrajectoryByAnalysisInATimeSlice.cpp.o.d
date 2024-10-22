@@ -155,8 +155,7 @@ CMakeFiles/electronInElectromagneticFieldLibraryStatic.dir/src/ElectronTrajector
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/bits/istream.tcc \
  /usr/include/c++/8/bits/sstream.tcc \
  /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/ElectronTrajectoryByAnalysisInATimeSlice/../../include/ElectronTrajectoryByAnalysisInATimeSlice/../BasicMassageOfElectronInElectromagneticField/../../../package/include/Dimension3Vector/Dimension3Vector.h \
- /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/ElectronTrajectoryByAnalysisInATimeSlice/../../include/ElectronTrajectoryByAnalysisInATimeSlice/../BasicMassageOfElectronInElectromagneticField/../../../package/include/Particle/Particle.h \
- /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/ElectronTrajectoryByAnalysisInATimeSlice/../../include/ElectronTrajectoryByAnalysisInATimeSlice/../BasicMassageOfElectronInElectromagneticField/../../../package/include/Particle/../Spin/Spin.h \
+ /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/ElectronTrajectoryByAnalysisInATimeSlice/../../include/ElectronTrajectoryByAnalysisInATimeSlice/../BasicMassageOfElectronInElectromagneticField/../../../package/include/Spin/Spin.h \
  /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/ElectronTrajectoryByAnalysisInATimeSlice/../../include/ElectronTrajectoryByAnalysisInATimeSlice/../BasicMassageOfElectronInElectromagneticField/../../../package/include/LaserField/LaserField.h \
  /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/src/ElectronTrajectoryByAnalysisInATimeSlice/../../include/ElectronTrajectoryByAnalysisInATimeSlice/../../../package/include/ParticleState/ParticleState.h \
  /usr/include/c++/8/iostream

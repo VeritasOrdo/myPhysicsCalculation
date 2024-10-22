@@ -44,4 +44,4 @@ target_link_libraries(myPhysicsLibraryStatic gsl gslcblas)
 target_link_libraries(myPhysicsLibraryShared gsl gslcblas)
 
 # Optimization flags
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")

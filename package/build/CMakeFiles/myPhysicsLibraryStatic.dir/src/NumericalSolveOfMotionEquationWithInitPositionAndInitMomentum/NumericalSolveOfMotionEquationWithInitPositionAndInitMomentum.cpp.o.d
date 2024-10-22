@@ -176,8 +176,6 @@ CMakeFiles/myPhysicsLibraryStatic.dir/src/NumericalSolveOfMotionEquationWithInit
  /usr/include/c++/8/backward/auto_ptr.h \
  /home/hjy_work/myPhysicsCalculation/package/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/../../include/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/../ParticleState/ParticleState.h \
  /home/hjy_work/myPhysicsCalculation/package/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/../../include/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/../ParticleState/../LorentzVector/LorentzVector.h \
- /home/hjy_work/myPhysicsCalculation/package/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/../../include/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/../ParticleState/../Particle/Particle.h \
- /home/hjy_work/myPhysicsCalculation/package/src/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/../../include/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/../ParticleState/../Particle/../Spin/Spin.h \
  /usr/include/gsl/gsl_errno.h /usr/include/gsl/gsl_types.h \
  /usr/include/gsl/gsl_odeiv2.h /usr/include/c++/8/stdlib.h \
  /usr/include/c++/8/iostream

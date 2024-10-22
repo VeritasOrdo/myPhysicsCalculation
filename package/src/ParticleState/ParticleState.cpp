@@ -15,13 +15,13 @@ ParticleState::ParticleState(LorentzVector<double> particleLorentzMomentum,Loren
     this->particleLorentzCoordinate = particleLorentzCoordinate;
 }
 
-ParticleState::ParticleState(Particle particle,Dimension3Vector<double> particleMomentum) {
-    this->particleLorentzMomentum = LorentzVector<double>(std::sqrt(particleMomentum*particleMomentum+particle.getRestMass()*particle.getRestMass()),particleMomentum.getX(),particleMomentum.getY(),particleMomentum.getZ());
+ParticleState::ParticleState(double mass,Dimension3Vector<double> particleMomentum) {
+    this->particleLorentzMomentum = LorentzVector<double>(std::sqrt(particleMomentum*particleMomentum+mass*mass),particleMomentum.getX(),particleMomentum.getY(),particleMomentum.getZ());
     this->particleLorentzCoordinate = LorentzVector<double>();
 }
 
-ParticleState::ParticleState(Particle particle,Dimension3Vector<double> particleMomentum,LorentzVector<double> particleLorentzCoordinate) {
-    this->particleLorentzMomentum = LorentzVector<double>(std::sqrt(particleMomentum*particleMomentum+particle.getRestMass()*particle.getRestMass()),particleMomentum.getX(),particleMomentum.getY(),particleMomentum.getZ());
+ParticleState::ParticleState(double mass,Dimension3Vector<double> particleMomentum,LorentzVector<double> particleLorentzCoordinate) {
+    this->particleLorentzMomentum = LorentzVector<double>(std::sqrt(particleMomentum*particleMomentum+mass*mass),particleMomentum.getX(),particleMomentum.getY(),particleMomentum.getZ());
     this->particleLorentzCoordinate = particleLorentzCoordinate;
 }
 
@@ -59,6 +59,12 @@ double ParticleState::getParticleEnergy() {
 
 double ParticleState::getParticleMass() {
     return std::sqrt(this->particleLorentzMomentum*this->particleLorentzMomentum);
+}
+
+ParticleState& ParticleState::operator=(const ParticleState& particleState) {
+    this->particleLorentzMomentum = particleState.particleLorentzMomentum;
+    this->particleLorentzCoordinate = particleState.particleLorentzCoordinate;
+    return *this;
 }
 
 ParticleState::~ParticleState() {

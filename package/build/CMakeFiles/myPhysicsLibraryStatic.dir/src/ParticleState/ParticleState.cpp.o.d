@@ -153,6 +153,4 @@ CMakeFiles/myPhysicsLibraryStatic.dir/src/ParticleState/ParticleState.cpp.o: \
  /usr/include/c++/8/bits/basic_ios.tcc /usr/include/c++/8/ostream \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/bits/istream.tcc \
  /usr/include/c++/8/bits/sstream.tcc \
- /home/hjy_work/myPhysicsCalculation/package/src/ParticleState/../../include/ParticleState/../Dimension3Vector/Dimension3Vector.h \
- /home/hjy_work/myPhysicsCalculation/package/src/ParticleState/../../include/ParticleState/../Particle/Particle.h \
- /home/hjy_work/myPhysicsCalculation/package/src/ParticleState/../../include/ParticleState/../Particle/../Spin/Spin.h
+ /home/hjy_work/myPhysicsCalculation/package/src/ParticleState/../../include/ParticleState/../Dimension3Vector/Dimension3Vector.h

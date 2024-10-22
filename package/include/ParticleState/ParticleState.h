@@ -1,7 +1,5 @@
 #include "../LorentzVector/LorentzVector.h"
 #include "../Dimension3Vector/Dimension3Vector.h"
-#include "../Particle/Particle.h"
-
 #pragma once
 
 class ParticleState {
@@ -12,8 +10,8 @@ class ParticleState {
         ParticleState();
         ParticleState(LorentzVector<double> particleLorentzMomentum);
         ParticleState(LorentzVector<double> particleLorentzMomentum,LorentzVector<double> particleLorentzCoordinate);
-        ParticleState(Particle particle,Dimension3Vector<double> particleMomentum);
-        ParticleState(Particle particle,Dimension3Vector<double> particleMomentum,LorentzVector<double> particleLorentzCoordinate);
+        ParticleState(double mass,Dimension3Vector<double> particleMomentum);
+        ParticleState(double mass,Dimension3Vector<double> particleMomentum,LorentzVector<double> particleLorentzCoordinate);
         LorentzVector<double> getParticleLorentzMomentum();
         LorentzVector<double> getParticleLorentzCoordinate();
         Dimension3Vector<double> getParticleMomentum();
@@ -23,5 +21,6 @@ class ParticleState {
         void changeParticleLorentzCoordinate(LorentzVector<double> particleLorentzCoordinate);
         double getParticleEnergy();
         double getParticleMass();
+        ParticleState& operator=(const ParticleState& particleState);
         ~ParticleState();
 };

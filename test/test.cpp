@@ -7,14 +7,14 @@
 #include <fstream>
 #include <chrono>
 
-/*int main() {
+int main() {
     double fieldParameter1 = 0.3;
     double fieldParameter2 = 2.0;
     double laserFrequency = 1.55;
     double electronMass = 510998.9461;
     double reducedMass = electronMass*std::sqrt(1+fieldParameter1*fieldParameter1+fieldParameter2*fieldParameter2);
     double energyInitial = 30*reducedMass;
-    double momentumXPrimdje = 0;
+    double momentumXPrime = 0;
     double momentumZPrime = std::sqrt(energyInitial*energyInitial-reducedMass*reducedMass-momentumXPrime*momentumXPrime);
     LorentzVector<double> momentumInitial(energyInitial,momentumXPrime,0,momentumZPrime);
     LaserField laserField1(fieldParameter1,laserFrequency);
@@ -25,13 +25,14 @@
     for(double properTimeSlice=0;properTimeSlice<100;properTimeSlice+=0.001) {
         electronTrajectoryByAnalysisInATimeSlice.setProperTimeSlice(properTimeSlice);
         electronTrajectoryByAnalysisInATimeSlice.calculateElectronStateFinal();
+        //std::cout<<electronTrajectoryByAnalysisInATimeSlice.getElectronStateFinal().getParticleLorentzMomentum()<<std::endl;
     }
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
     std::cout << "Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(end-begin).count() << "ms" << std::endl;
     return 0;
-}*/
+}
 
-int main(){
+/*int main(){
     double omega = 1.55;
     double fieldParameter1 = 50;
     double fieldParameter2 = 1;
@@ -82,4 +83,4 @@ int main(){
     auto fileTime1 = std::chrono::system_clock::now();
     std::cout<<"Time: "<<std::chrono::duration_cast<std::chrono::milliseconds>(fileTime1-fileTime).count()<<"ms"<<std::endl;
     return 0;
-}
+}*/

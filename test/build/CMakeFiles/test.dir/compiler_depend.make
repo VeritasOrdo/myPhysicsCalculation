@@ -192,10 +192,9 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
   /usr/include/c++/8/bits/sstream.tcc \
   /home/hjy_work/myPhysicsCalculation/package/include/LorentzVector/LorentzVector.h \
   /home/hjy_work/myPhysicsCalculation/package/include/ParticleState/ParticleState.h \
-  /home/hjy_work/myPhysicsCalculation/package/include/Particle/Particle.h \
-  /home/hjy_work/myPhysicsCalculation/package/include/Spin/Spin.h \
   /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.h \
   /home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/BasicMassageOfElectronInElectromagneticField/BasicMassageOfElectronInElectromagneticField.h \
+  /home/hjy_work/myPhysicsCalculation/package/include/Spin/Spin.h \
   /home/hjy_work/myPhysicsCalculation/package/include/LaserField/LaserField.h \
   /home/hjy_work/myPhysicsCalculation/package/include/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum/NumericalSolveOfMotionEquationWithInitPositionAndInitMomentum.h \
   /home/hjy_work/myPhysicsCalculation/package/include/NumericalSolveOfMotionEquationBase/NumericalSolveOfMotionEquationBase.h \
@@ -281,11 +280,9 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /home/hjy_work/myPhysicsCalculation/package/include/NumericalSolveOfMotionEquationBase/NumericalSolveOfMotionEquationBase.h:
 
-/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.h:
-
 /home/hjy_work/myPhysicsCalculation/package/include/Spin/Spin.h:
 
-/home/hjy_work/myPhysicsCalculation/package/include/Particle/Particle.h:
+/home/hjy_work/myPhysicsCalculation/electronInElectromagneticField/include/ElectronTrajectoryByAnalysisInATimeSlice/ElectronTrajectoryByAnalysisInATimeSlice.h:
 
 /home/hjy_work/myPhysicsCalculation/package/include/ParticleState/ParticleState.h:
 
